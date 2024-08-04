@@ -1,0 +1,16 @@
+data:
+  raw_data_path: "data/raw"
+  processed_data_path: "data/processed"
+
+model:
+  name: "Resnet50"
+  num_classes: 120
+  input_size: 224
+  batch_size: 32
+  epochs: 20
+  learning_rate: 0.001
+  checkpoint_path: "models/checkpoints"
+
+training:
+  device: 'cpu' # Mention 'cuda' if using GPU
+  save_interval: 5
